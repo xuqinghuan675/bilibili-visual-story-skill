@@ -11,3 +11,14 @@ Traffic example: distinguish total demand from one road's flow. Establish flow-d
 Queue example: retain job identity, processing work and server speed. Show which queue head is taken after the same completion event; preserve idle capacity and inaccessible waiting work in the same frame. Separate total waiting, one job's waiting and batch completion time. Overall improvement need not improve every individual.
 
 Fast pacing removes redundancy, not necessary rules or reading windows. Keep conditions beside conclusions; expose units and migration sources. Count reading time only after text is fully visible and include simultaneous new labels. A passed reading-time calculation does not prove understanding. Use independent blind explanation from actual output, then compare with the intended claim. If the mechanism is misunderstood, change the evidence, not merely font size.
+
+
+## Longer explanations: density without padding
+
+The current long-form treatment targets 180 seconds with a 20% tolerance (144–216 seconds). This is an editorial profile, not a platform requirement or a universal duration for every assignment. Add substantive visible conditions, mechanisms and comparisons; do not stretch an earlier film, repeat shots or slow playback to reach the target. Tighten redundant pauses while retaining complete reading windows and causal actions. In a narration-free treatment, a request for faster pacing does not imply adding a voice track.
+
+A model comparison must visibly announce its change of subject before the audience mistakes it for the original everyday object splitting or transforming. Put essential applicability conditions in a readable main caption at least once, not solely in tiny corner text. Return to the familiar phenomenon and distinguish what the model explains from what it does not establish. A comparison that changes multiple conditions must not be labeled a controlled single-variable experiment.
+
+Name the changed variable precisely. Particle shape is not material composition: a same-composition shape comparison must not be described as different ingredients. A model result is not a universal recipe for a real mixture. Use familiar descriptions before technical terms, and avoid ambiguous pronouns where two comparison groups coexist. Draw illustrative networks with appropriately weak visual links when hard connections could falsely imply chemical bonds.
+
+When the cause is a boundary catching on a small irregularity, make the irregularity recognizable at mobile scale and show the boundary move to that visible obstacle before stopping. A sentence saying that it is blocked cannot substitute for the blocking event. Synchronize transport explanations with the tracked object's movement, rather than waiting until arrival to explain what carried it.

@@ -31,3 +31,20 @@ These contracts summarize inspected upstream methods and observed pitfalls. Docu
 6. Bounded module trials. Test a representative short segment before estimating a full render budget, and record omitted shaders/objects, substituted materials, camera changes and known ordering defects. An upstream geometry/time module rendered through a CPU adaptation verifies that limited path only, not the original PBR, ambient occlusion, depth of field or whole film. Do not present upstream demonstrations as original educational films.
 
 Specific inspected counterexamples: PDoomVideo's legacy time entry does not by itself replace runtime animation time; its clip export path and file-size resume checks require independent exit-status and content validation. Lemo's illustrative traffic choreography and wheel behavior require model-specific verification. These are revision-bound findings, not claims about every future upstream version. See [source identities and rights](attribution.md).
+
+
+## Local geometry and comparison regressions
+
+Testing a particle center inside a liquid region is insufficient when its visible corners or outline cross the changing surface. Test the rendered shape against the evolving boundary and floor, with a stated screen-space margin, over the affected time range. Use exact containment for the relevant geometry; corner-only checks do not prove containment for arbitrary curved shapes or non-convex regions. A close-up may use a separate illustrative particle set, but label that identity domain rather than pretending that it is the full scene's unchanged population.
+
+Inspect the obstacle, contact line and moving particles at both full size and mobile width. Essential model conditions belong in stable main captions; secondary notes must not overlap object outlines. Independently inspect transitions into and out of comparison scenes and separate shape, composition and boundary-condition changes. Passing a local regression does not certify the entire film.
+
+## Content-addressed revision example
+
+In a 180-second, 24 fps render, all 4,320 final per-frame source descriptions were regenerated and hashed after a patch. Source-content differences invalidated 768 frames; 3,552 unchanged descriptions reused raster frames only after their stored raster hashes were checked. The delivered sequence was then fully decoded and compared with the final source rasters. This illustrates content-based invalidation, not a fixed rerender percentage or a permission to reuse frames with changed renderer settings. Preserve the renderer/configuration/resource provenance too. Source consistency does not prove explanatory accuracy or listening quality.
+
+## Normal-playback observation limits
+
+Verify the actual playback starting position; clicking a timeline is not proof of returning to zero. Record the viewed intervals, timing basis, gaps, UI-only observations and repeated end frames. A wall-clock span longer than the film does not establish continuous coverage, and desktop capture times are not exact source PTS. Treat independent decoded-frame reviews, action strips, normal-speed sampled observations and actual listening as distinct evidence.
+
+For example, a normal-playback sample review of a 180-second sequence had an 11.645-second observation gap at a capture-call boundary. Separate decoded comparisons can support checks of the affected content, but cannot retroactively make that normal-playback record gap-free. A review of the silent version can inform the music version's visuals only when video-frame equivalence is verified; it says nothing about audible joins, harmony or listening comfort. Unheard audio remains not_checked even if loudness, clipping, stream duration and audio hashes pass. Delivery of a file is not platform submission, moderation or public availability.

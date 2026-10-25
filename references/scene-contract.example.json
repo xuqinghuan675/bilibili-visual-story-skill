@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "project": "Causal route demonstration",
+  "seed": 407,
+  "delivery": "preview",
+  "music": {
+    "mode": "none",
+    "embedded": false
+  },
+  "scenes": [
+    {
+      "id": "junction",
+      "start": 0,
+      "duration": 8,
+      "question": "多一条近路，主角会怎样选择？",
+      "claim": "新路线改变了可选路径；此镜头不单独证明均衡时间。",
+      "source": "Independently verify the chosen model before production.",
+      "objects": [
+        {
+          "id": "map",
+          "role": "固定空间参照"
+        },
+        {
+          "id": "hero",
+          "role": "暖金车，代表一个决策者"
+        },
+        {
+          "id": "shortcut",
+          "role": "新选择"
+        }
+      ],
+      "persistent_ids": [],
+      "beats": [
+        {
+          "at": 0,
+          "object_id": "hero",
+          "action": "接近已有路口",
+          "reason": "建立主角和选择位置"
+        },
+        {
+          "at": 2,
+          "object_id": "shortcut",
+          "action": "新路径逐渐显现",
+          "reason": "只改变一个条件，给观众预测时间"
+        },
+        {
+          "at": 5,
+          "object_id": "hero",
+          "action": "沿新路径改变方向",
+          "reason": "让个体选择成为可见动作"
+        }
+      ],
+      "visual_change": "同一辆车在同一张地图上转向新路；不用切换结果卡。",
+      "hold_after_event": 1.5,
+      "model_boundary": "车辆是路由示意，不是微观交通仿真；此镜头尚未说明整体时耗。"
+    }
+  ]
+}

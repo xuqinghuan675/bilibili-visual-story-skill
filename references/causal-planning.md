@@ -1,5 +1,9 @@
 # Causal planning and comprehension
 
+Begin with a concrete everyday phenomenon that conflicts with an audience expectation. Identify where it occurs, what is surprising, why someone would continue watching and what visible action will resolve the question. Show that event before definitions or equations. Avoid unsupported sensational claims; verify facts and models internally even when the presentation is simple.
+
+Before rendering, check whether a viewer can name the everyday puzzle without reading a title or numbers, whether every essential cause has a visible action and before/after state, whether each remaining number is necessary and attached to its conditions, and whether the ending explains the opening. Missing evidence is not a pass. A mathematical test does not establish curiosity or comprehension. Traffic and queue cases below are examples, not required topics.
+
 Write the audience's initial expectation, observable change and revised understanding. Each shot should make one main inference possible. A shot's subject is an object or process, not a title. Preserve object identity and spatial anchors through scale changes. Include preparation, action and stable consequence; allow repetition when it supplies a controlled comparison.
 
 Traffic example: distinguish total demand from one road's flow. Establish flow-dependent and fixed road costs before route comparisons. Label a shortcut's cost under the old split as an initial estimate, not the new equilibrium. Follow an individual reroute, then each group's contribution to shared-road flow. Show why the apparently crowded option remains preferable using complete route components. Keep other drivers fixed during a single-driver deviation. Historical cost 65 and current alternatives 80/85 are different states, not simultaneously available choices. Illustrative cars and screen travel duration are not a microscopic traffic simulation or a convergence proof.

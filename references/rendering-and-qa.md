@@ -19,6 +19,12 @@ Key cache reuse by hashes of the actual renderer source/bundle, relevant configu
 After the last patch and final encode, decode the delivered file and compare every frame with its corresponding final source raster, checking sequence, count and timing. Use a documented compression-aware comparison for lossy encoding, not byte equality; inspect unexpected differences. Keep source/configuration/content hashes and the comparison scope with the build record. This detects stale exports, not comprehension, motion quality or rights compliance; those require their separate reviews.
 
 
+## Final-output identity and promotion
+
+The following are recommended checks, not a claim that a renderer already implements them. Include both source-content identity and effective rendering/encoding parameters in cache and output provenance. File size, modification time and a success message cannot establish that the delivered bytes belong to the intended revision. Retain a content hash of the validated output.
+
+Encode to a temporary artifact, check the encoder exit status, and validate that artifact before promoting it to the final name. Check the rename or replacement result separately; encoder success does not imply promotion success. Reopen the final path and compare its content hash with the validated artifact, then check the delivered stream properties. A failed promotion must leave the new delivery unconfirmed rather than silently accepting an older same-size file.
+
 ## Transferable implementation contracts
 
 These contracts summarize inspected upstream methods and observed pitfalls. Documentation is not implementation or a passing test. Track source reading, example viewing, module execution, regression testing and final-film review separately.
@@ -48,3 +54,7 @@ In a 180-second, 24 fps render, all 4,320 final per-frame source descriptions we
 Verify the actual playback starting position; clicking a timeline is not proof of returning to zero. Record the viewed intervals, timing basis, gaps, UI-only observations and repeated end frames. A wall-clock span longer than the film does not establish continuous coverage, and desktop capture times are not exact source PTS. Treat independent decoded-frame reviews, action strips, normal-speed sampled observations and actual listening as distinct evidence.
 
 For example, a normal-playback sample review of a 180-second sequence had an 11.645-second observation gap at a capture-call boundary. Separate decoded comparisons can support checks of the affected content, but cannot retroactively make that normal-playback record gap-free. A review of the silent version can inform the music version's visuals only when video-frame equivalence is verified; it says nothing about audible joins, harmony or listening comfort. Unheard audio remains not_checked even if loudness, clipping, stream duration and audio hashes pass. Delivery of a file is not platform submission, moderation or public availability.
+
+## Gap-directed normal-speed review
+
+After an initial whole-film playback, use the observation record to identify specific uncovered intervals or unresolved transitions. Review those intervals at normal speed with enough preceding and following context to judge the action and caption. Record the newly observed scope and remaining gaps; do not repeatedly replay the whole film as a substitute for resolving a known gap. A seek target is not an observed media timestamp, and UI-only captures or repeated end frames add no film coverage. Where precise timing is unavailable, preserve that uncertainty instead of reporting exact decoded coverage. These are review recommendations, not evidence that any particular film has passed them.

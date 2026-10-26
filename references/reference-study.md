@@ -43,3 +43,13 @@ Transferable lessons: establish the timer before reward; keep the timer and alte
 A one-to-one assignment of viewed screenshots to requested time targets is a browser-observation diagnostic, not proof of independent source frames or exact source PTS. Keep the matching rule, tolerance, before/after displayed times and proxy error separate from decoded timing. A diagnostic tolerance is not an approved timing-error budget; satisfying every target does not establish gap-free playback or listening.
 
 Exclude captures with evidence of stale imagery, buffering, an old loop or UI-only content even when the page clock advances. Conversely, identical pixels alone do not prove staleness: a genuine source hold can span multiple times. Use image identity together with displayed-time and capture context, preserve ambiguous candidates, and do not count repeated target mappings as additional observations. A remaining unmatched target may reflect competing candidates rather than an entirely unseen moment. Close the scoped diagnostic when its stated criteria are met without upgrading unrelated viewing or audio claims.
+
+## Revision evidence chain
+
+Bind three different activities to the same deliverable rather than treating a research note as a completed improvement:
+
+1. **Observed:** record the input revision and completion time, reference identity, observation time, actual scope, time-evidence type and the transferable visual action. Re-examining a saved frame is a still-image review, not a new full-video viewing. Where the brief calls for post-completion learning, establish that chronology explicitly.
+2. **Modified:** record input/output content identities, actual source diff, affected intervals and how the change implements the observation. A retrospective mapping, a new checklist or a changed description without a changed artifact is not an implemented revision. If no change was made, say so and why.
+3. **Verified:** record the revised artifact identity, review time, inspected intervals, evidence type, failures and remaining gaps. Review the final correction, not only an earlier attempt. A local correction can close its local risk without becoming a new whole-film review.
+
+Keep source reading, reported observations by another reviewer, directly viewed stills, decoded-frame checks, normal-speed observations, independent comprehension and actual listening in separate evidence fields. Attach their scope and pass/revise/not_checked status; they are not interchangeable. A reviewer reading a report must not claim to have personally watched its footage. Existing learning and QA may supply background, but cannot retroactively fill a missing activity or a required chronological order.

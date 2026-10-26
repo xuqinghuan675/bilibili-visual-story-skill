@@ -15,3 +15,5 @@ Use one workflow from reference study to post-publication learning. This public 
 6. Retain [attribution and license boundaries](references/attribution.md). Do not copy private logs, reference frames, runtime instructions, account data or secrets into public releases.
 
 Current technical evidence must be recorded per environment. CPU-rendered output does not establish working browser WebGL/PBR; an offline material still does not establish an animation pipeline. Reading an Opus-named skill does not invoke an Opus model. Never claim untested capabilities or invisible quality checks.
+
+For revision work, bind observation, actual modification and verification to the same output version; see [the revision evidence chain](references/reference-study.md#revision-evidence-chain). Use [endpoint handoffs and occlusion regressions](references/rendering-and-qa.md#endpoint-handoffs-and-occlusion-regressions) when a result must visibly travel between stable subjects. Optional procedural sound design requires its own [event-level determinism and interface checks](references/rendering-and-qa.md#optional-procedural-audio-static-findings), not merely a fixed global seed.

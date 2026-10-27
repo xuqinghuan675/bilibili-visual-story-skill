@@ -94,3 +94,30 @@ These are revision-bound source-reading findings from Lemo's [core/audio/sfx.py]
 - Validate empty arrays and short/zero windows before calling normalization, brown-noise or limiter helpers. A limiter's name does not establish true-peak safety. Measure the encoded output and actually listen separately; source inspection establishes neither safe peaks nor a satisfactory mix.
 
 Status here is source_read only. Adaptation, runtime regression, encoded-audio validation and listening remain not_checked. The [Lemo MIT notice](licenses/LemoLab-MIT.txt) remains applicable to its code/documentation; it does not grant rights to example recordings or third-party assets.
+
+## Actual-font caption boundaries
+
+Space-based word wrapping does not handle continuous Chinese or an overwide first token. Do not use character count or a text anchor as an ink-width measurement, or silently split a number/identifier to make a test pass. Preserve the original text and its deliberate rendered lines, then measure the actual installed font in the actual renderer.
+
+For trusted project-generated static SVG, `scripts/check_caption_bounds.py` uses installed Inkscape and Fontconfig (`fc-match`). It does not install dependencies or execute a film renderer. Supply a JSON manifest:
+
+```json
+{"samples":[{"id":"caption-1","svg":"frames/example.svg","text":"原句","lines":["原句"],"safe_rect":[0,0,960,540]}]}
+```
+
+Run from the directory against which SVG paths resolve:
+
+```sh
+python scripts/check_caption_bounds.py manifest.json --output bounds.json
+python -m unittest discover -s scripts -p 'test_caption_bounds.py' -v
+```
+
+Each line must identify exactly one SVG `text` element and explicitly declare one installed font family. The helper records the requested font, resolved family/style, font file hash and source SVG hash, then queries ink boxes on a temporary copy. Use ordinary Regular/Bold font styles; the small helper is not a general CSS, variable-font, inherited-style or browser-layout engine. A primary font match does not prove that every Unicode glyph avoided internal fallback. The result includes local file paths: keep production result manifests private, and sanitize them before any sharing.
+
+`safe_rect` is the actual intended region in SVG user coordinates, not an inferred platform safe area. Choose the correct canvas or subtitle bar separately for each layout. Check all four edges; a missing font, ambiguous line, malformed input or absent box is unverified, not a pass. Fix incorrect test-region inputs without moving valid subtitles to satisfy a wrong rectangle. The checker rejects selected active/external SVG constructs but is **not a sanitizer or security boundary**: only feed trusted static SVG, not arbitrary downloaded files or stylesheets.
+
+A sample pass establishes containment only at that sample. It does not cover every frame, opacity transitions, animated occlusion, mobile readability, actual reading speed, listening, rights or release permission. Keep those checks separate and state uncovered intervals. The included 17 regressions cover finite rectangles, all edges, exact text, ambiguous matching, active-element rejection, missing fonts and actual-font Chinese/long-token overflow. Empty/non-list sample collections, non-object rows and malformed JSON/root values produce unverified results and a nonzero CLI exit, never an empty pass. Their font-dependent tests require Inkscape, Fontconfig and Noto Sans CJK SC; unavailable dependencies are not a test pass.
+
+### Source-derived layer and state contracts
+
+Static reading of Lemo's pinned `styles/blueprint/demo/sheet.js` suggests keeping subject outlines, internal light/dark masks and mechanism overlays separate. Clip shading to the subject rather than darkening the entire frame. Drive shadow offset, blur and strength from one shared lift state, while retaining a common projection. These are stylized mappings, not physical height or PBR verification. Preserve/restore compositing state, validate dimensions and zoom, and test camera changes before claiming reusable rendering behavior. The source's space-only wrapping motivated the independent caption checker above; no upstream renderer is bundled or executed by it.

@@ -22,3 +22,11 @@ A model comparison must visibly announce its change of subject before the audien
 Name the changed variable precisely. Particle shape is not material composition: a same-composition shape comparison must not be described as different ingredients. A model result is not a universal recipe for a real mixture. Use familiar descriptions before technical terms, and avoid ambiguous pronouns where two comparison groups coexist. Draw illustrative networks with appropriately weak visual links when hard connections could falsely imply chemical bonds.
 
 When the cause is a boundary catching on a small irregularity, make the irregularity recognizable at mobile scale and show the boundary move to that visible obstacle before stopping. A sentence saying that it is blocked cannot substitute for the blocking event. Synchronize transport explanations with the tracked object's movement, rather than waiting until arrival to explain what carried it.
+
+## Conditions, actions and result words
+
+Audit the order of visible conditions, mechanism motion, measurable state change and conclusion text together. A result word can reveal an answer too early even when every required object eventually appears. Establish contact before transfer, reception before execution, and a distinguishable state difference before naming its relative rate or outcome. A direction arrow can explain a newly established transfer before its accumulated result is large; it cannot by itself establish a faster rate.
+
+Keep the original object and its source context visible while an identifiable copy enters a mechanism or channel. Retain stable endpoint labels through arrival and transformation. A color match or subtitle change alone does not show where an object came from. If a diagram resets initial conditions or returns to an earlier example, label that change at the reset rather than letting apparent reverse motion imply a physical reversal.
+
+Keep mechanism fields distinct from lighting/material shading. Clip a temperature or concentration overlay to its intended domain and give it a legend; do not let a decorative glow masquerade as transport or a quantitative solution. A stylized size-to-quantity mapping is not a conservation-law simulation. Inspect the final corrected intervals at normal speed as well as at their boundary frames.
